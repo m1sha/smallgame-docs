@@ -25,7 +25,8 @@
   flex-direction: column
   gap: 12px
   padding: 8px
-  border: 1px solid #555
+  border: 2px solid #3f3f3f
+  border-radius: 4px
   border-radius: 8px
   .constructor-signature
     display: flex

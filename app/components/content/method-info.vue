@@ -2,8 +2,6 @@
   <div class="constructor-info doc-article">
     <div class="constructor-signature">
       <div class="constructor-name"> 
-        <span class="ts-class"> <slot name="class-name" /></span>
-        <span class="op-dot">.</span>
         <span class="ts-method"> <slot name="method" /></span>
       </div>
       <div>

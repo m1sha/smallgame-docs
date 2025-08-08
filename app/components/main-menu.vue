@@ -27,6 +27,7 @@ const imActive = computed(() => route.path.indexOf('/docs') > -1)
   display: flex
   justify-content: center
   width: 100%
+  margin-top: .3em
   ul
     display: flex
     padding: 0

@@ -1,26 +1,94 @@
+@use 'colors'
+@use 'scroll'
 body
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   display: flex
   justify-content: center
   width: 100%
   height: 100%
-  background-color: #333
-  color: #ccc
+  background-color: var(--data-layout-bg-color)
+  color: var(--data-layout-fg-color)
   font-size: 14px
   overflow: hidden
   .root-layout
     display: flex
     flex-direction: column
-    gap: 8px
+    gap: 20px
+
     .page
       width: 70vw
+      height: 90vh
       display: flex
       gap: 12px
-
       border: 1px solid #353535
-      box-shadow: 1px 2px 30px #282828
+      border-radius: 0.25em
+      box-shadow: 1px 2px 60px #282828
 
+.keyword
+  color: #2959b4
+.ts-base
+  color: #2e5296
+.ts-class
+  color: #77a193
+  font-weight: 600
+.ts-type-intf
+  color: #608d7e
+.ts-method
+  color: #ebebeb
+  font-weight: 600
+
+.ts-self
+  color: #777
+  font-size: 0.8em
+
+.accessors
+  p
+    display: flex
+    gap: 4px
+  .ts-getter, .ts-setter
+    border-radius: 12px
+    padding: 4px
+    font-size: 0.7em
+    color: #bbb
+  .ts-getter
+    background-color: #001581
+  .ts-setter
+    background-color: #005511
+
+.op-colon, .op-comma
+  margin-right: 8px
+.op-br-o
+  margin-right: 2px
+.op-br-c
+  margin-left: 2px
+.op-ret
+  margin-left: 4px
+  margin-right: 4px
+  font-weight: 900
+
+h1,h2,h3,h4,h5,h6
+  color: #a1a1a1
+  a
+    color: #a1a1a1
+h1
+  font-size: 1.6em
+h2
+  font-size: 1.2em
+  font-weight: 400
+menu
+  padding: 0
+  margin: 0
 ul
   list-style: none
   margin: 0
   padding: 0
-  padding-left: 12px
+  padding-left: clamp(0.1em, 0.6em, 0.6em)
+a
+  text-decoration: none
+  color: #ccc
+  &:hover
+    color: #eee
+
+p
+  padding: 0
+  margin: 0
