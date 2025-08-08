@@ -1,5 +1,7 @@
-# Installation
+---
+title: Installation
+---
 
-::param-info
-sss
-::
+```bash
+npm install smallgame
+```

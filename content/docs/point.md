@@ -1,6 +1,10 @@
-# Point
+---
+title: "Point"
+---
 
 ## Constructors
+
+::list
 
 ::constructor-info
 #name 
@@ -57,34 +61,258 @@ middle
 Creates a new instance of the point in the between of two p0 and p1 points
 ::
 
-
+::
 
 
 
 ## Properties
 
-x:number get set Gets or sets x position of the point
+::list
 
-y:number get set Gets or sets x position of the point
+::property-info
+#name
+x
+#type
+[number]{.ts-base}
+#accessors
+[get]{.ts-getter} [set]{.ts-setter}
 
-length:number get Gets a length
+#description
+Gets or sets x position of the point
+::
 
-magnitude:number get Gets a magnitude
+::property-info
+#name
+y
+#type
+[number]{.ts-base}
+#accessors
+[get]{.ts-getter} [set]{.ts-setter}
 
-magnitudeSq:number get Gets a magnitudeSq
+#description
+Gets or sets y position of the point
+::
+
+::property-info
+#name
+length
+#type
+[number]{.ts-base}
+#accessors
+[get]{.ts-getter} 
+
+#description
+Gets a length
+::
+
+::property-info
+#name
+magnitude
+#type
+[number]{.ts-base}
+#accessors
+[get]{.ts-getter} 
+
+#description
+Gets a magnitude
+::
+
+::property-info
+#name
+magnitudeSq
+#type
+[number]{.ts-base}
+#accessors
+[get]{.ts-getter} 
+
+#description
+Gets a magnitudeSq
+::
+
+::
 
 ## Methods
 
-moveX (x:number)⇨Point
+::list
 
-Moves the point by the x axis
+::method-info
+#method
+moveX [Self]{.ts-self}
+#overridings
+(x: [number]{.ts-base}) ⇨ [Point]{.ts-class}
+#description
+Sets the point specified x coordinate
+::
 
+::method-info
+#method
+moveY [Self]{.ts-self}
+#overridings
+(y: [number]{.ts-base}) ⇨ [Point]{.ts-class}
+#description
+Sets the point specified y coordinate
+::
 
-moveY (y:number)⇨Point
+::method-info
+#method
+move [Self]{.ts-self}
+#overridings
+(x: [number]{.ts-base}, y: [number]{.ts-base}) ⇨ [Point]{.ts-class}<br>
+(xy: [number]{.ts-base}) ⇨ [Point]{.ts-class}<br>
+(point: [TPoint]{.ts-type-intf}) ⇨ [Point]{.ts-class}<br>
+#description
+Sets the point specified x and y coordinates
+::
 
-Moves the point by the y axis
+::method-info
+#method
+shiftX [Self]{.ts-self}
+#overridings
+(dx: [number]{.ts-base}) ⇨ [Point]{.ts-class}
+#description
+Shifts the point specified x coordinate
+::
 
+::method-info
+#method
+shiftY [Self]{.ts-self}
+#overridings
+(dy: [number]{.ts-base}) ⇨ [Point]{.ts-class}
+#description
+Shifts the point specified y coordinate
+::
 
-shift (d:number)⇨Point
-
+::method-info
+#method
+shift [Self]{.ts-self}
+#overridings
+(dx: [number]{.ts-base}, dy: [number]{.ts-base}) ⇨ [Point]{.ts-class}<br>
+(dxy: [number]{.ts-base}) ⇨ [Point]{.ts-class}<br>
+(d: [TPoint]{.ts-type-intf}) ⇨ [Point]{.ts-class}<br>
+#description
 Shifts the point on a new position
+::
+
+::method-info
+#method
+scaleX [Self]{.ts-self}
+#overridings
+(dx: [number]{.ts-base}) ⇨ [Point]{.ts-class}
+#description
+Scales the point by x axis
+::
+
+::method-info
+#method
+scaleY [Self]{.ts-self}
+#overridings
+(dy: [number]{.ts-base}) ⇨ [Point]{.ts-class}
+#description
+Scales the point by y axis
+::
+
+::method-info
+#method
+scale [Self]{.ts-self}
+#overridings
+(dx: [number]{.ts-base}, dy: [number]{.ts-base}) ⇨ [Point]{.ts-class}<br>
+(dxy: [number]{.ts-base}) ⇨ [Point]{.ts-class}<br>
+(d: [TPoint]{.ts-type-intf}) ⇨ [Point]{.ts-class}<br>
+#description
+Scales the point by specified axises
+::
+
+::method-info
+#method
+negX [Self]{.ts-self}
+#overridings
+() ⇨ [Point]{.ts-class}
+#description
+Does negative x coordinate (x * -1)
+::
+
+::method-info
+#method
+negY [Self]{.ts-self}
+#overridings
+() ⇨ [Point]{.ts-class}
+#description
+Does negative y coordinate (y * -1)
+::
+
+::method-info
+#method
+neg [Self]{.ts-self}
+#overridings
+() ⇨ [Point]{.ts-class}
+#description
+Does negative x and y coordinates (x * -1, y * -1)
+::
+
+::method-info
+#method
+abs [Self]{.ts-self}
+#overridings
+() ⇨ [Point]{.ts-class}
+#description
+Converts axises to absolute
+::
+
+::method-info
+#method
+equals
+#overridings
+(point: [TPoint]{.ts-type-intf}) ⇨ [boolean]{.ts-base}
+#description
+Equals points
+::
+
+::method-info
+#method
+swapAxis [Self]{.ts-self}
+#overridings
+() ⇨ [Point]{.ts-class}
+#description
+Swaps axises
+::
+
+::method-info
+#method
+clone
+#overridings
+() ⇨ [Point]{.ts-class}
+#description
+Creates copy of the point
+::
+
+::method-info
+#method
+rotate [Self]{.ts-self}
+#overridings
+(deg: [number]{.ts-base}) ⇨ [Point]{.ts-class}
+#description
+Rotates the point around (0,0) point
+::
+
+::method-info
+#method
+dot
+#overridings
+(point: [TPoint]{.ts-type-intf}) ⇨ [number]{.ts-base}
+#description
+Does dot
+::
+
+::method-info
+#method
+cross
+#overridings
+(point: [TPoint]{.ts-type-intf}) ⇨ [number]{.ts-base}
+#description
+Does cross
+::
+
+::
+
+
+
