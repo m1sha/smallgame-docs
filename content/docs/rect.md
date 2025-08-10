@@ -86,6 +86,8 @@ Gets bounded rect
 
 ::
 
+<br>
+
 ## Properties
 
 ::list
@@ -259,6 +261,8 @@ Gets array of points  <br> \[top-left.x, top-left.y, top-right.x, top-right.y, b
 ::
 
 ::
+
+<br>
 
 ## Methods
 

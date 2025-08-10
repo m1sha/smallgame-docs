@@ -17,6 +17,8 @@ Creates a new instance of the sprite
 
 ::
 
+<br>
+
 ## Properties
 
 ::list
@@ -46,6 +48,8 @@ Gets or sets a draw rect of sprite
 ::
 
 ::
+
+<br>
 
 ## Methods
 

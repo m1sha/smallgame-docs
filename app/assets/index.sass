@@ -20,25 +20,27 @@ body
       height: 90vh
       display: flex
       gap: 12px
-      border: 1px solid #353535
+      border: 1px solid var(--data-page-br-color)
       border-radius: 0.25em
-      box-shadow: 1px 2px 60px #282828
+      box-shadow: 1px 2px 60px var(--data-page-sw-color)
 
 .keyword
-  color: #2959b4
+  color: var(--data-ts-keyword-color)
 .ts-base
-  color: #2e5296
+  color: var(--data-ts-base-type-color)
 .ts-class
-  color: #77a193
+  color: var(--data-ts-class-color)
   font-weight: 600
 .ts-type-intf
-  color: #608d7e
+  color: var(--data-ts-type-color)
 .ts-method
-  color: #ebebeb
+  color: var(--data-ts-method-color)
   font-weight: 600
+.ts-string
+  color: var(--data-ts-string-color)
 
 .ts-self
-  color: #777
+  color: var(--data-ts-method-self-color)
   font-size: 0.8em
 
 .accessors
@@ -49,11 +51,11 @@ body
     border-radius: 12px
     padding: 4px
     font-size: 0.7em
-    color: #bbb
+    color: var(--data-ts-prop-text-color)
   .ts-getter
-    background-color: #001581
+    background-color: var(--data-ts-prop-getter-color)
   .ts-setter
-    background-color: #005511
+    background-color: var(--data-ts-prop-setter-color)
 
 .op-colon, .op-comma
   margin-right: 8px

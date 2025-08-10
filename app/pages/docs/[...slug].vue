@@ -8,32 +8,14 @@ const { data: page } = await useAsyncData(route.path, () => {
 <template>
   <div class="page-content">
 
-    <div class="menu">
+    <div class="doc-menu-content">
       <h1>Documentation</h1>
-      <menu>
-        <ul>
-          <li>
-            <NuxtLink to="/docs/">Introdution</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/docs/installation">Installation</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/docs/get-started">Get Started</NuxtLink>
-          </li>
-          <li><NuxtLink to="/docs/game">Game</NuxtLink></li>
-          <li><NuxtLink to="/docs/surface">Surface</NuxtLink></li>
-          <li><NuxtLink to="/docs/sprite">Sprite</NuxtLink></li>
-          <li><NuxtLink to="/docs/sketch">Sketch</NuxtLink></li>
-          <li><NuxtLink to="/docs/rect">Rect</NuxtLink></li>
-          <li><NuxtLink to="/docs/point">Point</NuxtLink></li>
-        </ul>
-      </menu>
+      <DocMenu />
     </div>
     
     <article>
       <h1 v-if="page">{{ page.title }}</h1>
-    <ContentRenderer v-if="page" :value="page" />
+      <ContentRenderer v-if="page" :value="page" />
     </article>
 
     
@@ -46,6 +28,21 @@ const { data: page } = await useAsyncData(route.path, () => {
   padding: 2em 1.2em
   padding-right: .6em
   width: 100%
+
+  .doc-menu-content
+    padding: 8px
+    border: 2px solid #3f3f3f
+    border-radius: 4px
+    width: clamp(170px, 10vw, 10vw)
+    display: flex
+    flex-direction: column
+    h1
+      align-self: center
+
+  @media screen and (width < 600px) 
+    &
+      flex-direction: column
+  
 
   article
     overflow: auto
@@ -64,17 +61,5 @@ const { data: page } = await useAsyncData(route.path, () => {
     h2
       top: calc( 1.6em + 8px )
       z-index: 2
-
-.menu
-  padding: 8px
-  border: 2px solid #3f3f3f
-  border-radius: 4px
-  width: clamp(8vw, 12vw, 12vw)
-  a
-    color: #ccc
-
-  .router-link-active
-    color: #559916
-
     
 </style>

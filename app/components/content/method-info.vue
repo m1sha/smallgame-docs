@@ -10,7 +10,12 @@
     </div>
 
     <div>
-      <slot name="description" />
+      <div>
+        <slot name="description" />
+      </div>
+      <div>
+        <slot name="example" />
+      </div>  
     </div>
   </div>
 </template>

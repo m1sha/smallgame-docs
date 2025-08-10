@@ -63,7 +63,7 @@ Creates a new instance of the point in the between of two p0 and p1 points
 
 ::
 
-
+<br>
 
 ## Properties
 
@@ -130,6 +130,8 @@ Gets a magnitudeSq
 ::
 
 ::
+
+<br>
 
 ## Methods
 

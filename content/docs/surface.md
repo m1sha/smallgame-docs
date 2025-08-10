@@ -73,6 +73,8 @@ Combines surfaces in new instance of surface
 
 ::
 
+<br>
+
 ## Properties
 
 ::list
@@ -150,6 +152,8 @@ Gets object for a draw (Not recommended use this property directly)
 ::
 
 ::
+
+<br>
 
 ## Methods
 

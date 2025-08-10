@@ -1,0 +1,1 @@
+cp -r ./.output/public/* ../smallgame-docs.io

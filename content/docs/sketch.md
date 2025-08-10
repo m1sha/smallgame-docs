@@ -17,6 +17,8 @@ Creates a new instance of the sketch
 
 ::
 
+<br>
+
 ## Properties
 
 ::list
@@ -46,6 +48,8 @@ Gets a bounded rectangle
 ::
 
 ::
+
+<br>
 
 ## Methods
 
