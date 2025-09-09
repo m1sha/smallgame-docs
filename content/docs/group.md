@@ -127,8 +127,8 @@ Checks collide a sprite any sprite in the group
 const enemies = new Group<Enemy>()
 const hero = new Hero()
 
-enemies.collideGroup(hero, enemy => {
-  // an enemy collides the hero
+enemies.collideSprite(hero, enemy => {
+  // an enemy is colliding the hero
 })
 
 ```
@@ -148,7 +148,7 @@ const balls = new Group<Ball>()
 const bricks = new Group<Brick>()
 
 balls.collideGroup(bricks, (ball, brick) => {
-  // a ball collides a brick
+  // a ball is colliding a brick
 })
 
 ```

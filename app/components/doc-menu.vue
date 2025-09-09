@@ -20,11 +20,20 @@
         <div class="selector" />
         <NuxtLink to="/docs/animator">Animator</NuxtLink></li>
       <li>
+        <div class="selector" /> 
+        <NuxtLink to="/docs/transition">AnimationTransition</NuxtLink></li>
+      <li>
         <div class="selector" />
         <NuxtLink to="/docs/assets">Assets</NuxtLink></li>
       <li>
         <div class="selector" />
         <NuxtLink to="/docs/game">Game</NuxtLink></li>
+      <li>
+        <div class="selector" />
+        <NuxtLink to="/docs/game-events">GameEvents</NuxtLink></li>
+      <li>
+        <div class="selector" />
+        <NuxtLink to="/docs/gameloop">gameloop</NuxtLink></li>
        <li>
         <div class="selector" /> 
         <NuxtLink to="/docs/group">Group</NuxtLink></li>
@@ -33,10 +42,19 @@
         <NuxtLink to="/docs/keys">Keys</NuxtLink></li>
       <li>
         <div class="selector" /> 
-        <NuxtLink to="/docs/point">Point</NuxtLink></li>
+        <NuxtLink to="/docs/pixel-mask">PixelMask</NuxtLink></li>
       <li>
         <div class="selector" /> 
+        <NuxtLink to="/docs/point">Point</NuxtLink></li>
+       <li>
+        <div class="selector" /> 
         <NuxtLink to="/docs/rect">Rect</NuxtLink></li>
+      <li>
+        <div class="selector" /> 
+        <NuxtLink to="/docs/shape-style">ShapeStyle</NuxtLink></li>
+      <li>
+        <div class="selector" /> 
+        <NuxtLink to="/docs/size">Size</NuxtLink></li>
       <li>
         <div class="selector" /> 
         <NuxtLink to="/docs/sketch">Sketch</NuxtLink></li>
@@ -48,9 +66,16 @@
         <NuxtLink to="/docs/surface">Surface</NuxtLink></li>
       <li>
         <div class="selector" /> 
-        <NuxtLink to="/docs/transition">Transition</NuxtLink></li>
-     
-      
+        <NuxtLink to="/docs/text-style">TextStyle</NuxtLink></li>
+      <li>
+        <div class="selector" /> 
+        <NuxtLink to="/docs/text">Text</NuxtLink></li>
+      <li>
+        <div class="selector" /> 
+        <NuxtLink to="/docs/tile-map">TileMap</NuxtLink></li>
+      <li>
+        <div class="selector" /> 
+        <NuxtLink to="/docs/time">Time</NuxtLink></li>
       
     </ul>
   </menu>

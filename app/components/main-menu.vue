@@ -10,14 +10,14 @@ const imActive = computed(() => route.path.indexOf('/docs') > -1)
         <NuxtLink to="/">Home</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/docs/" :class="{'router-link-active': imActive }">Docs</NuxtLink>
+        <NuxtLink to="/docs/" :class="{'router-link-active': imActive }">Documentations</NuxtLink>
       </li>
-      <li>
+      <!-- <li>
         <NuxtLink to="/">Tutorial</NuxtLink>
       </li>
       <li>
         <NuxtLink to="/">Examples</NuxtLink>
-      </li>
+      </li> -->
     </ul>
   </menu>
 </template>
